@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("../assets/fonts/Gotham-Bold.otf");
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("../assets/fonts/Gotham-Light.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none!important;
+    scroll-behavior: smooth;
+    font-family: "Gotham";
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+
+/*Logo*/
+
+.img-logo {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+
+/*navbar*/
+
+.navbar {
+    background: #339933!important;
+    color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin: 0 auto;
+}
+
+.nav-item a {
+    color: #fff;
+    font-size: 25px;
+}
+
+.navbar-toggler {
+    border: 1px solid #fff;
+    outline: none!important;
+}
+
+.navbar-toggler i {
+    color: #fff;
+    margin: 0 auto;
+}
+
+
+/*Slider*/
+
+.carousel-inner {
+    height: 550px!important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-item img {
+    object-fit: contain!important;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: auto;
+    height: 100%;
+    background: rgba(2, 43, 22, 0.473);
+}
+
+
+/*titulos */
+
+.titulos {
+    color: #000;
+    font-size: 60px;
+    margin: 100px 0;
+    font-family: "Gotham-Bold";
+}
+
+.txt-nosotros {
+    color: rgb(61, 59, 59);
+    font-weight: 500;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.nosotros {
+    width: 100%;
+    height: 100%;
+}
+
+.nosotros img {
+    width: 100%;
+    height: 100%;
+}
+
+.txt-gal {
+    font-size: 20px;
+    color: #000;
+    font-family: "Gotham-Bold";
+    margin: 10px 0;
+    display: none;
+}
+
+.servicios {
+    position: absolute;
+    z-index: 10;
+    width: 92%;
+    height: 230px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+    font-family: "Gotham-Bold";
+    text-transform: uppercase;
+    background: rgba(0, 4, 0, 0.678);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.nosotros:hover .servicios {
+    opacity: 1;
+}
+
+
+/*Servicios*/
+
+.crematorio {
+    border: 1px solid black;
+}
+
+.txt-servicios {
+    color: #000;
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+/*Galeria*/
+
+.galeria {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+    transition: all .4s ease-in-out;
+}
+
+.galeria:hover {
+    transform: scale(1.03);
+}
+
+
+/* Contacto */
+
+.txt-conta {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+i {
+    margin: 0 20px 0 0;
+    font-size: 25px;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #339933;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-inner {
+        height: unset!important;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .img-logo {
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+    }
+    .titulos {
+        font-size: 27px;
+        margin: 20px 0;
+    }
+    .txt-nosotros {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .info {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+    .navbar-toggler {
+        right: 0;
+    }
+    iframe {
+        width: 320px;
+    }
+    .txt-gal {
+        display: block;
+    }
+    .txt-servicios {
+        margin: 0 0 10px 0;
+    }
+}
